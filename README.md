@@ -1,18 +1,18 @@
 # Real-Time WebSocket QA Framework (Latency & Multi-Client Simulation)
 
-## 🌟 Project Overview
+## Project Overview
 This project demonstrates advanced **Quality Assurance (QA) automation** techniques for modern, event-driven applications using the **WebSocket** protocol. 
 
 It validates the core functionality of real-time messaging and measures critical performance metrics like **Round Trip Time (RTT) Latency**.
 
-## 🛠️ Technologies & Dependencies
+## Technologies & Dependencies
 * **Language:** Python 3.10+
 * **Automation Framework:** Pytest
 * **Async/Real-Time:** `websockets`, `asyncio`
 * **Reporting:** Allure Reports (Professional, graphical test reporting)
 * **Code Quality:** Black (Used for automatic code formatting)
 
-## 🚀 Setup and Execution
+## Setup and Execution
 
 ### 1. Prerequisites
 Ensure you have Python 3.10+ installed and access to your terminal (CMD or PowerShell).
