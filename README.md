@@ -37,3 +37,14 @@ bash
 #Run all tests and generate raw data for Allure reports
 bash
 .\venv\Scripts\python.exe -m pytest --alluredir=./allure-results
+
+# Viewing Professional Reports (Allure)
+
+To view the interactive HTML reports, you need to serve the data generated in the previous step:
+
+1.  **Install Allure Commandline:** (Required only once. Install via npm, brew, or similar package manager).
+2.  **Serve the Report:**
+    bash
+    allure serve allure-results
+    
+This will automatically open the report in your web browser, showing execution details, timing, and clear pass/fail status.
