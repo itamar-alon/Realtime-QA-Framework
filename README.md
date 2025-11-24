@@ -29,3 +29,11 @@ python3 -m venv venv
 5. Run All Tests and Generate Allure ReportsThe following command runs all tests (-s) and outputs the raw data for the Allure report:Bash.\venv\Scripts\python.exe -m pytest --alluredir=./allure-results
 Test CoverageTestObjectiveMetricStatusTest 1Latency Check & Functional ValidationMeasures RTT (Round Trip Time) in milliseconds and asserts it's below a set threshold (2000ms for public servers).PassedTest 2Multi-Client Concurrent FlowSimulates two clients exchanging data simultaneously using asyncio.gather. (Note: This test validates the logic but may fail on public Echo servers due to connection closing limitations).Passed📊 Viewing Professional Reports (Allure)To view the interactive HTML reports, you need to serve the data generated in the previous step:Install Allure Commandline: (Required only once. Install via npm, brew, or similar package manager).Serve the Report:Bashallure serve allure-results
 This will automatically open the report in your web browser, showing execution details, timing, and clear pass/fail status.
+
+# Run all tests and see output in console
+bash
+.\venv\Scripts\python.exe -m pytest -s
+
+#Run all tests and generate raw data for Allure reports
+bash
+.\venv\Scripts\python.exe -m pytest --alluredir=./allure-results
